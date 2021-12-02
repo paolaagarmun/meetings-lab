@@ -1,0 +1,26 @@
+{
+  "name": "meetings-lab",
+  "version": "1.0.0",
+  "description": "## Iteration 1 - Make sure to have the server runnign - install express, mongoose",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paolaagarmun/meetings-lab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paolaagarmun/meetings-lab/issues"
+  },
+  "homepage": "https://github.com/paolaagarmun/meetings-lab#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.14"
+  }
+}
