@@ -7,7 +7,9 @@
 # Iteration 2
 - create 2 models [User, Meeting]
 - create 2 routes for the models user & meeting
+- create 2 controllers
 
 # Itration 3
 - Create full crud for the Meeting Route (post and get for users);
-- Create a User (can be without the encryption and auth methods)
+- Create post, get and getById
+- BONUS finish all crud for user
