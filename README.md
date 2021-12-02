@@ -6,9 +6,8 @@
 
 # Iteration 2
 - create 2 models [User, Meeting]
-- create 2 routes for the models
-* make sure to install 'bcryptjs' and 'jsonwebtoken'
+- create 2 routes for the models user & meeting
 
 # Itration 3
-- Create full crud for the Meeting Route
+- Create full crud for the Meeting Route (post and get for users);
 - Create a User (can be without the encryption and auth methods)
