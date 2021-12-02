@@ -4,8 +4,31 @@ const UserSchema =  Schema (
     {
         name: {type: String},
         age: {type: Number},
-        cool: {type:Boolean}
+        cool: {type:Boolean},
+        email: {
+            type: String,
+            trim: true,
+            required: true,
+            unique: true
+        },
+        password: {
+            type: String,
+            trim: true,
+            required: true
+        },
+        role: {
+            type: String,
+            required: true,
+            enum: ["USER", "ADMIN"],
+            default: "USER"
+        }
+
     }
-) 
+);
+
+UserSchema.methods.toJSON = function() {
+    const { password, __v, ...user } = this.toObject();
+    return user;
+}
 
 module.exports = model("User", UserSchema)

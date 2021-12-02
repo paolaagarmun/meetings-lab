@@ -3,7 +3,10 @@ const {Schema, model} = require('mongoose');
 const MeetingSchema = Schema ({
     title: {type:String},
     duration: {type:String},
-    participants: {type:[]},
+    participants: {
+        type:[],
+        ref: "User"
+    },
     date: { type: Date, default: Date.now }
 })
 
